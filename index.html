@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>শালিনী ও সৌরভ | শুভ বিবাহ</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Galada&family=Hind+Siliguri:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="start-overlay" class="start-screen">
+        <div class="content">
+            <h1 class="font-bengali-heading">শুভ বিবাহ</h1>
+            
+            <div class="seal-container" id="sealContainer">
+                <div class="seal-progress-bg"></div>
+                <div class="seal-wax">
+                    <i class="fa-solid fa-om"></i>
+                </div>
+                <div class="sparkles">
+                    <span></span><span></span><span></span><span></span>
+                </div>
+            </div>
+
+            <p class="instruction-text" id="instructionText">খুলতে চাপ দিয়ে ধরে রাখুন</p>
+        </div>
+    </div>
+
+    <button id="musicToggle" class="music-btn hidden">
+        <i class="fa-solid fa-volume-high"></i>
+    </button>
+
+    <audio id="bgMusic" loop>
+        <source
+            src="https://cdn.pixabay.com/download/audio/2022/11/22/audio_febc508520.mp3?filename=indian-wedding-127278.mp3"
+            type="audio/mpeg">
+    </audio>
+
+    <div class="corner top-left"></div>
+    <div class="corner top-right"></div>
+    <div class="corner bottom-left"></div>
+    <div class="corner bottom-right"></div>
+
+    <header class="hero-section" id="home">
+        <div id="petals-container"></div>
+
+        <div class="hero-content">
+            <div class="ganesh-icon animate-pulse"><i class="fa-solid fa-om"></i></div>
+
+            <p class="invite-text reveal-up">শুভ বিবাহে আপনাকে সাদর আমন্ত্রণ</p>
+
+            <div class="couple-photos-container reveal-up">
+                <div class="photo-frame">
+                    <img src="https://placehold.co/200x200/620000/FFD700?text=Shalini" alt="Shalini">
+                </div>
+                
+                <div class="heart-separator">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="photo-frame">
+                    <img src="https://placehold.co/200x200/620000/FFD700?text=Sourav" alt="Sourav">
+                </div>
+            </div>
+
+            <h1 class="couple-names">
+                <span class="name reveal-up">শালিনী</span>
+                <span class="amp">&</span>
+                <span class="name reveal-up">সৌরভ</span>
+            </h1>
+
+            <div class="decorative-line"></div>
+
+            <p class="wedding-date reveal-up">৬ই ফেব্রুয়ারি, ২০২৬</p>
+            <p class="sub-date reveal-up delay-1">কলকাতা, ভারত</p>
+        </div>
+
+        <div class="scroll-indicator" id="scrollArrow">
+            <p>নিচে দেখুন</p>
+            <i class="fa-solid fa-chevron-down"></i>
+        </div>
+    </header>
+
+    <section class="section countdown-section">
+        <div class="container">
+            <h2 class="section-title reveal-up">আর মাত্র বাকি</h2>
+            <div id="countdown" class="timer-grid reveal-up">
+                <div class="time-box">
+                    <span id="days">00</span><small>দিন</small>
+                </div>
+                <div class="time-box">
+                    <span id="hours">00</span><small>ঘন্টা</small>
+                </div>
+                <div class="time-box">
+                    <span id="minutes">00</span><small>মিনিট</small>
+                </div>
+                <div class="time-box">
+                    <span id="seconds">00</span><small>সেকেন্ড</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section family-section">
+        <div class="container">
+            <h2 class="section-title reveal-up">পরিবার পরিচয়</h2>
+            
+            <div class="family-container">
+                <div class="family-card bride-side reveal-up">
+                    <h3 class="side-title">কনের বাড়ি</h3>
+                    <div class="family-list">
+                        <div class="family-row">
+                            <span class="label">পিতা:</span>
+                            <span class="value">শ্রী কনের পিতা</span>
+                        </div>
+                        <div class="family-row">
+                            <span class="label">মাতা:</span>
+                            <span class="value">শ্রীমতী কনের মাতা</span>
+                        </div>
+                        <div class="family-row">
+                            <span class="label">ঠাকুর্দা:</span>
+                            <span class="value">স্বর্গীয় দাদু মশাই</span>
+                        </div>
+                        <div class="family-row">
+                            <span class="label">ঠাকুমা:</span>
+                            <span class="value">শ্রীমতী দিদিমা</span>
+                        </div>
+                        <div class="family-row">
+                            <span class="label">ভাই:</span>
+                            <span class="value">ভাইয়ের নাম</span>
+                        </div>
+                        <div class="family-row">
+                            <span class="label">বোন:</span>
+                            <span class="value">বোনের নাম</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="family-card groom-side reveal-up">
+                    <h3 class="side-title">বরের বাড়ি</h3>
+                    <div class="family-list">
+                        <div class="family-row">
+                            <span class="label">পিতা:</span>
+                            <span class="value">শ্রী বরের পিতা</span>
+                        </div>
+                        <div class="family-row">
+                            <span class="label">মাতা:</span>
+                            <span class="value">শ্রীমতী বরের মাতা</span>
+                        </div>
+                        <div class="family-row">
+                            <span class="label">ঠাকুর্দা:</span>
+                            <span class="value">স্বর্গীয় দাদু মশাই</span>
+                        </div>
+                        <div class="family-row">
+                            <span class="label">ঠাকুমা:</span>
+                            <span class="value">শ্রীমতী দিদিমা</span>
+                        </div>
+                        <div class="family-row">
+                            <span class="label">ভাই:</span>
+                            <span class="value">ভাইয়ের নাম</span>
+                        </div>
+                        <div class="family-row">
+                            <span class="label">বোন:</span>
+                            <span class="value">বোনের নাম</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section events-section" id="events">
+        <div class="container">
+            <h2 class="section-title reveal-up">অনুষ্ঠান সূচি</h2>
+
+            <div class="events-container">
+                <div class="event-card reveal-up">
+                    <h3>শুভ বিবাহ</h3>
+                    <p class="date-gold">৬ই ফেব্রুয়ারি, ২০২৬</p>
+                    <p class="time">সন্ধ্যা ৭:০০ ঘটিকা হইতে</p>
+                    <div class="divider-small"></div>
+                    <p class="venue">ম্যারেজ হল</p>
+                    <p class="city">কলকাতা</p>
+                </div>
+
+                <div class="event-card reveal-up">
+                    <h3>প্রীতিভোজ</h3>
+                    <p class="date-gold">৮ই ফেব্রুয়ারি, ২০২৬</p>
+                    <p class="time">সন্ধ্যা ৭:০০ ঘটিকা হইতে</p>
+                    <div class="divider-small"></div>
+                    <p class="venue">শ্রী অরবিন্দ স্টেডিয়াম</p>
+                    <p class="city">বর্ধমান</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section invitation-formal-section">
+        <div class="container">
+            <div class="invitation-box reveal-up">
+                <div class="invitation-ornament-top"><i class="fa-solid fa-crown"></i></div>
+                
+                <h2 class="parents-intro">শ্রীমতী কনের মাতা ও শ্রী কনের পিতা</h2>
+                
+                <p class="formal-text">
+                    তাঁদের আদরের একমাত্র কন্যা
+                </p>
+
+                <h1 class="bride-highlight-text">শালিনী</h1>
+
+                <p class="connector-text">- র সহিত -</p>
+
+                <h1 class="groom-highlight-text">সৌরভ</h1>
+
+                <p class="groom-parents-text">
+                    (পুত্র: শ্রীমতী বরের মাতা ও শ্রী বরের পিতা)
+                </p>
+                
+                <p class="formal-text">
+                    এর শুভ পরিণয় উপলক্ষে আপনাদের উপস্থিতি ও আশীর্বাদ আমাদের একান্ত কাম্য।
+                </p>
+
+                <div class="invitation-details">
+                    <p class="invite-date"><i class="fa-regular fa-calendar"></i> ৬ই ফেব্রুয়ারি, ২০২৬</p>
+                    <p class="invite-venue"><i class="fa-solid fa-location-dot"></i> ম্যারেজ হল, কলকাতা</p>
+                </div>
+
+                <div class="invitation-ornament-bottom"><i class="fa-solid fa-leaf"></i></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section rsvp-section">
+        <div class="container">
+            <h2 class="section-title reveal-up">যোগাযোগ</h2>
+            <p class="rsvp-subtext reveal-up">প্রয়োজনে যোগাযোগ করুন:</p>
+            
+            <div class="rsvp-grid reveal-up">
+                <div class="rsvp-card">
+                    <i class="fa-solid fa-phone-volume"></i>
+                    <h3>মোবাইল</h3>
+                    <a href="tel:+919876543210">+91 98765 43210</a>
+                </div>
+                
+                <div class="rsvp-card">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <h3>হোয়াটসঅ্যাপ</h3>
+                    <a href="tel:+919876543210">+91 98765 43210</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p style="font-family: 'Hind Siliguri', sans-serif;">আপনাদের আগমনের অপেক্ষায়</p>
+        <h2 class="footer-names">শালিনী ও সৌরভ</h2>
+
+        <div class="maker-credit">
+            <p>ডিজাইন করেছেন <strong>অভিরূপ রুদ্র</strong></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
