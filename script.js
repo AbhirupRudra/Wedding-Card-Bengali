@@ -18,6 +18,9 @@ let isUnlocked = false;
 const startHold = (e) => {
     e.preventDefault(); // Prevent standard touch actions
     if (isUnlocked) return;
+
+    // Add vibration on press
+    if (navigator.vibrate) navigator.vibrate(50);
     
     sealContainer.classList.add('active');
     // Bengali Text Update
@@ -41,6 +44,10 @@ const endHold = () => {
 // Function to actually unlock the site
 const unlockSite = () => {
     isUnlocked = true;
+
+    // Add stronger vibration on unlock
+    if (navigator.vibrate) navigator.vibrate(200);
+
     sealContainer.classList.add('broken'); // Explode animation
     instructionText.style.opacity = '0';
     
