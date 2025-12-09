@@ -59,7 +59,7 @@ const unlockSite = () => {
     // Fade out overlay after seal breaks
     setTimeout(() => {
         startOverlay.style.opacity = '0';
-        startOverlay.style.transform = 'scale(1.1)'; // Slight zoom effect
+        startOverlay.style.transform = 'scale(1.1)'; // Slight zoom effect 
         setTimeout(() => {
             startOverlay.style.display = 'none';
         }, 1000);
