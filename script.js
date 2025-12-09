@@ -1,5 +1,5 @@
 // Dates
-const weddingDate = new Date("Feb 6, 2026 19:00:00").getTime();
+const weddingDate = new Date("Feb 6, 2026 00:00:00").getTime();
 
 // Elements
 const startOverlay = document.getElementById('start-overlay');
