@@ -33,7 +33,7 @@ This project features a unique **"Royal Seal" unlocking mechanism** with haptic 
 
 ## 📂 File Structure
 
-```text
+text
 wedding-card/
 │
 ├── index.html      # Main HTML structure and content
@@ -97,6 +97,3 @@ Replace the source URL in the `<audio>` tag in `index.html`:
 -----
 
 *Made with ❤️ for Shalini & Sourav*
-
-```
-```
